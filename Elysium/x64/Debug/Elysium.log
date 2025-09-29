@@ -1,0 +1,29 @@
+﻿  imgui.cpp
+\Imgui\imgui.cpp(1,1): error C1083: Cannot open source file: 'Imgui\imgui.cpp': No such file or directory
+  (compiling source file '/Imgui/imgui.cpp')
+  
+  imgui_demo.cpp
+\Imgui\imgui_demo.cpp(1,1): error C1083: Cannot open source file: 'Imgui\imgui_demo.cpp': No such file or directory
+  (compiling source file '/Imgui/imgui_demo.cpp')
+  
+  imgui_draw.cpp
+\Imgui\imgui_draw.cpp(1,1): error C1083: Cannot open source file: 'Imgui\imgui_draw.cpp': No such file or directory
+  (compiling source file '/Imgui/imgui_draw.cpp')
+  
+  imgui_impl_dx9.cpp
+\Imgui\imgui_impl_dx9.cpp(1,1): error C1083: Cannot open source file: 'Imgui\imgui_impl_dx9.cpp': No such file or directory
+  (compiling source file '/Imgui/imgui_impl_dx9.cpp')
+  
+  imgui_impl_win32.cpp
+\Imgui\imgui_impl_win32.cpp(1,1): error C1083: Cannot open source file: 'Imgui\imgui_impl_win32.cpp': No such file or directory
+  (compiling source file '/Imgui/imgui_impl_win32.cpp')
+  
+  imgui_widgets.cpp
+\Imgui\imgui_widgets.cpp(1,1): error C1083: Cannot open source file: 'Imgui\imgui_widgets.cpp': No such file or directory
+  (compiling source file '/Imgui/imgui_widgets.cpp')
+  
+  main.cpp
+\Main\main.cpp(1,1): error C1083: Cannot open source file: 'Main\main.cpp': No such file or directory
+  (compiling source file '/Main/main.cpp')
+  
+  Generating Code...
