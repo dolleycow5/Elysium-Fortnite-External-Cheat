@@ -23,5 +23,5 @@ def git_commit_and_push(commit_message):
 
 while True:
     now = update_file()
-    git_commit_and_push(f"Автообновление: {now}")
+    git_commit_and_push(datetime.now().strftime("%Y-%m-%d-%H-%M-%S"))
     time.sleep(300)  
