@@ -2,7 +2,7 @@ import time
 from datetime import datetime
 import subprocess
 
-file_path = "output.txt"
+file_path = "123/Elysium.txt"
 
 branch = "main"
 
