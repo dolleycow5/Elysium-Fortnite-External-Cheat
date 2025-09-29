@@ -24,4 +24,4 @@ def git_commit_and_push(commit_message):
 while True:
     now = update_file()
     git_commit_and_push(datetime.now().strftime("%Y-%m-%d-%H-%M-%S"))
-    time.sleep(300)  
+    time.sleep(30)  
